@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">firstApp</string>
+    <string name="My_Text">Результат</string>
+    <string name="hint_Input_Text">Результат</string>
+    <string name="button">Преобразовать</string>
+    <string name="Task3MyHeading">Все наоборот</string>
+    <string name="Enter_Text">Ввод</string>
+    <string name="conclusion_Text">вывод</string>
+</resources>
