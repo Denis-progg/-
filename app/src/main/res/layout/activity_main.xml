@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".MainActivity">
 
     <TextView
@@ -13,10 +14,74 @@
         android:layout_height="wrap_content"
         android:text="@string/calculatorTV"
         android:textSize="36sp"
+=======
+    android:background="@color/white"
+    tools:context=".MainActivity">
+результат
+    <TextView
+        android:id="@+id/result_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:gravity="center"
+        android:hint="@string/hint_Input_Text"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/countingCharacters_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Enter_Text"
+       />
+поле ввода
+    <EditText
+        android:id="@+id/Enter_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="@string/Enter_Text"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintBottom_toTopOf="@id/result_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading_Text" />
+
+вывод
+    <TextView
+        android:id="@+id/countingCharacters_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="@string/conclusion_Text"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintBottom_toTopOf="@id/ButtonB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_Text" />
+
+
+заголовок
+    <TextView
+        android:id="@+id/heading_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/Task3MyHeading"
+        android:textColor="@color/colorTextView"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.5"
+>>>>>>> 7803acaefc4d500cf89bbbdd66006b11bb0102b1
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.1" />
 
 
@@ -137,3 +202,24 @@
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+        app:layout_constraintVertical_bias="0.1"/>
+
+<Button
+    android:id="@+id/ButtonB"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/button"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:onClick="onclick"
+    android:backgroundTint="@color/colorButton"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/countingCharacters_Text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+>>>>>>> 7803acaefc4d500cf89bbbdd66006b11bb0102b1
